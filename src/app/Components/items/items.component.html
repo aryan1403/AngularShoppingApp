@@ -1,0 +1,14 @@
+<div class="container">
+<div class="row">
+  <div class="col-sm" *ngFor="let item of items">
+    <div class="card" style="width: 18rem;">
+        <img src={{item.imageurl}} class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{item.itemname}}</h5>
+          <p class="card-text">{{item.itemdesc}}</p>
+          <a class="btn btn-primary">{{item.price}}</a>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
