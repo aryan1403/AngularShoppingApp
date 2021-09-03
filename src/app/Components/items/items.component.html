@@ -1,23 +1,36 @@
 <ngb-carousel>
   <ng-template ngbSlide *ngFor="let item of items">
     <div class="container">
-      <div class="row">
-        <div class="col-sm" style="margin-top: 50px;">
-            <div class="card" style="width: 18rem;">
-              <img src={{item.imageurl}} class="card-img-top">
-              <div class="card-body" style="border-radius: 20%;">
-                <h5 class="card-title text-center" style="color: rgb(27, 27, 27); padding-left: 10px;">{{item.itemname}}</h5>
-                  <p class="card-text text-center" style="color: rgb(21, 22, 22); padding-left: 10px;">{{item.itemdesc}}</p>
-                <div>
-                  <a class="btn btn-primary" style="width: 100%; background-color: rgb(15, 97, 228); border: none; border-radius: 20px;">${{item.price}}</a>
-                </div>
-                <div>
-                  <a class="btn btn-primary" style="width: 100%; background-color: rgb(0, 167, 89); border: none; margin-top: 2px; border-radius: 20px;">Add to Cart</a> 
-                </div>
-              </div>
+        <div class="card-body" style="width: 18rem; margin-left: auto; margin-right: auto;">
+          <img src="{{ item.imageurl }}" class="card-img-top" />
+          <div class="card-body" style="border-radius: 20%">
+            <h5 class="card-title text-center" style="color: aliceblue; padding-left: 10px">
+              {{ item.itemname }}
+            </h5>
+            <p class="card-text text-center" style="color: aliceblue; padding-left: 10px">
+              {{ item.itemdesc }}
+            </p>
+            <div>
+              <a class="btn btn-primary" style="
+                  width: 100%;
+                  background-color: rgb(15, 97, 228);
+                  border: none;
+                  border-radius: 20px;
+                ">${{ item.price }}</a>
+            </div>
+            <div>
+              <a class="btn btn-primary" style="
+                  width: 100%;
+                  background-color: rgb(0, 167, 89);
+                  border: none;
+                  margin-top: 5px;
+                  border-radius: 20px;
+                  margin-bottom: 50px;
+                ">Add to Cart</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+ 
   </ng-template>
 </ngb-carousel>
